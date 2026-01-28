@@ -242,10 +242,10 @@ The generated `metadata.csv` files will have columns: `id, filename, split, y, a
 - `y`: Class label
 - `a`: Attribute/group label
 
-## Key Hyperparameters
+## Key Parameters
 
-- `--spectral_rank` (k): Dimension of error subspace (default: 1)
-- `--gamma`: Reweighting strength for error-informed weights (default: 10.0)
+- `--spectral_rank` (k): Dimension of error subspace (default: 1) (typically tuned with hyperparameter sweeps)
+- `--gamma`: Reweighting strength for error-informed weights (default: 10.0) (typically tuned with hyperparameter sweeps)
 - `--reg_coeff`: Regularization coefficient for adjustment matrix (default: 0.0)
 - `--lr`: Learning rate for adjustment matrix (default: 0.01)
 - `--num_epochs`: Number of training epochs (default: 1000 for Stage 2)
