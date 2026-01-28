@@ -180,14 +180,6 @@ The generated `metadata.csv` files will have columns: `id, filename, split, y, a
 - `y`: Class label
 - `a`: Attribute/group label
 
-## Key Hyperparameters
-
-- `--spectral_rank` (k): Dimension of error subspace (default: 1)
-- `--gamma`: Reweighting strength for error-informed weights (default: 10.0)
-- `--reg_coeff`: Regularization coefficient for adjustment matrix (default: 0.0)
-- `--lr`: Learning rate for adjustment matrix (default: 0.01)
-- `--num_epochs`: Number of training epochs (default: 1000 for Stage 2)
-
 ## How LEIA Works
 
 1. **Error-Informed Weights**: Computes weights `μ_i = exp(γ * (1 - p_i))` where `p_i` is the predicted probability of the correct label. Higher weight is assigned to examples with lower confidence.
@@ -202,20 +194,6 @@ The generated `metadata.csv` files will have columns: `id, filename, split, y, a
    - `adjustment_logits = A^T projected` (learned adjustment)
    - `adjusted_logits = base_logits + adjustment_logits` (final prediction)
 
-## Citation
-
-If you use LEIA in your research, please cite:
-
-```bibtex
-@article{leia2024,
-  title={LEIA: Low-rank Error-Informed Adjustment},
-  author={...},
-  journal={...},
-  year={2024}
-}
-```
-
-## License
 
 [Add your license here]
 
