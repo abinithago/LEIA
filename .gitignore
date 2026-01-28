@@ -1,0 +1,93 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyTorch
+*.pth
+*.pt
+!environment.yml
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Logs and outputs
+logs/
+outputs/
+*.log
+wandb/
+tensorboard/
+
+# Data directories (exclude large datasets)
+data/datasets/
+*.csv
+*.tsv
+*.json
+!environment.yml
+!*.md
+
+# Model checkpoints and embeddings (exclude large files)
+checkpoints/
+embeddings/
+*.ckpt
+*.pkl
+*.h5
+*.hdf5
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+
+# Large visualization files (optional - uncomment if you want to exclude)
+# *.png
+# *.jpg
+# *.pdf
