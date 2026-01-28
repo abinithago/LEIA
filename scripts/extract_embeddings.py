@@ -209,7 +209,7 @@ def get_data_loaders(args):
     return train_loader, val_loader, test_loader
 
 
-def main():
+def main(): 
     args = parse_args()
     
     # Set device
