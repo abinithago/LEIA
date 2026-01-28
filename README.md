@@ -50,7 +50,6 @@ leia/                         # Package root
 ├── generate_metadata.py      # CLI tool for manual metadata generation
 ├── environment.yml           # Conda environment definition
 ├── README.md                 # This file
-└── SETUP.md                  # Detailed setup guide
 ```
 
 ## Usage
